@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Fandral 的个人项目展厅：医学影像、AI 工程与独立产品。"
+    />
+    <meta name="theme-color" content="#ffffff" />
+    <meta property="og:title" content="Fandral / Projects" />
+    <meta
+      property="og:description"
+      content="把临床问题，做成可以验证的工具。"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://fandral2008.github.io/" />
+    <title>Fandral / Projects</title>
+    <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">跳到主要内容</a>
+
+    <header class="site-header" data-header>
+      <a class="brand" href="#top" aria-label="返回首页">FANDRAL / PROJECTS</a>
+      <nav aria-label="主导航">
+        <a href="#projects">项目</a>
+        <a href="#method">方法</a>
+        <a href="#about">关于</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="top" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <h1 id="hero-title">
+            <span>把临床问题，</span>
+            <span>做成可以验证的工具。</span>
+          </h1>
+          <p>医学影像 × AI 工程 × 独立产品</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#projects">查看项目</a>
+            <a
+              class="text-link"
+              href="https://github.com/fandral2008"
+              target="_blank"
+              rel="noreferrer"
+            >
+              GitHub <span aria-hidden="true">↗</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <img src="./assets/hero-contours.webp" alt="" />
+          <span class="scan-line scan-line-x"></span>
+          <span class="scan-line scan-line-y"></span>
+        </div>
+      </section>
+
+      <section class="projects section" id="projects" aria-labelledby="projects-title">
+        <div class="section-heading">
+          <h2 id="projects-title">项目</h2>
+          <p id="project-count" aria-live="polite">6 个项目</p>
+        </div>
+
+        <div class="filters" aria-label="筛选项目">
+          <button class="filter is-active" type="button" data-filter="all" aria-pressed="true">全部</button>
+          <button class="filter" type="button" data-filter="medical" aria-pressed="false">医疗影像</button>
+          <button class="filter" type="button" data-filter="engineering" aria-pressed="false">AI 工程</button>
+          <button class="filter" type="button" data-filter="learning" aria-pressed="false">学习工具</button>
+        </div>
+
+        <div class="project-list">
+          <article class="project project-featured" data-category="learning engineering">
+            <div class="project-number" aria-hidden="true">01</div>
+            <div class="project-main">
+              <div class="project-copy">
+                <h3>理清 Clarify</h3>
+                <p>面向中文语境的信息判断与推理训练，用故事、判断和迁移练习拆开推理过程。</p>
+                <div class="project-actions">
+                  <a
+                    class="button button-outline"
+                    href="https://fandral2008.github.io/clarify-logic/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >在线体验 <span aria-hidden="true">↗</span></a>
+                  <a
+                    class="text-link"
+                    href="https://github.com/fandral2008/clarify-logic"
+                    target="_blank"
+                    rel="noreferrer"
+                  >查看源码 <span aria-hidden="true">↗</span></a>
+                </div>
+              </div>
+              <a
+                class="project-preview"
+                href="https://fandral2008.github.io/clarify-logic/"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="打开理清 Clarify 在线体验"
+              >
+                <img src="./assets/clarify-preview.jpg" alt="理清 Clarify 课程界面预览" />
+              </a>
+            </div>
+            <p class="project-status status-public">公开 · 可体验</p>
+          </article>
+
+          <article class="project" data-category="engineering">
+            <div class="project-number" aria-hidden="true">02</div>
+            <div class="project-main">
+              <div class="project-copy">
+                <h3>WeChat Radar</h3>
+                <p>把群聊中的链接、话题与趋势整理成可回看的信号。</p>
+                <div class="project-actions">
+                  <a
+                    class="text-link"
+                    href="https://github.com/fandral2008/wechat-radar"
+                    target="_blank"
+                    rel="noreferrer"
+                  >查看源码 <span aria-hidden="true">↗</span></a>
+                </div>
+              </div>
+            </div>
+            <p class="project-status status-open">开源</p>
+          </article>
+
+          <article class="project" data-category="medical engineering">
+            <div class="project-number" aria-hidden="true">03</div>
+            <div class="project-main">
+              <div class="project-copy">
+                <h3>Radiology Guard</h3>
+                <p>扫描前身份与部位校验，面向真实临床工作流的错误阻断。</p>
+              </div>
+            </div>
+            <p class="project-status status-private">私有案例</p>
+          </article>
+
+          <article class="project" data-category="engineering">
+            <div class="project-number" aria-hidden="true">04</div>
+            <div class="project-main">
+              <div class="project-copy">
+                <h3>Local Professional Dictation</h3>
+                <p>本地优先的专业语音输入与可切换专业词库。</p>
+              </div>
+            </div>
+            <p class="project-status status-progress">开发中</p>
+          </article>
+
+          <article class="project" data-category="medical engineering">
+            <div class="project-number" aria-hidden="true">05</div>
+            <div class="project-main">
+              <div class="project-copy">
+                <h3>Technician Copilot</h3>
+                <p>将扫描协议、设备经验与故障处理组织为可检索的技术知识。</p>
+              </div>
+            </div>
+            <p class="project-status status-private">私有案例</p>
+          </article>
+
+          <article class="project" data-category="engineering">
+            <div class="project-number" aria-hidden="true">06</div>
+            <div class="project-main">
+              <div class="project-copy">
+                <h3>Shift Assistant</h3>
+                <p>带权限边界的班表查阅、统计与日常协作助手。</p>
+              </div>
+            </div>
+            <p class="project-status status-private">私有案例</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="method section" id="method" aria-labelledby="method-title">
+        <div class="section-heading">
+          <h2 id="method-title">方法</h2>
+        </div>
+
+        <ol class="principles">
+          <li>
+            <span class="principle-number" aria-hidden="true">01</span>
+            <div>
+              <h3>从真实问题出发</h3>
+              <p>先看数据、流程与约束，再决定工具。</p>
+            </div>
+          </li>
+          <li>
+            <span class="principle-number" aria-hidden="true">02</span>
+            <div>
+              <h3>做成可验证的交付</h3>
+              <p>能运行、能检查、能被下一位接手。</p>
+            </div>
+          </li>
+          <li>
+            <span class="principle-number" aria-hidden="true">03</span>
+            <div>
+              <h3>公开与边界同样重要</h3>
+              <p>开源可复用部分；临床数据与私有系统保持隔离。</p>
+            </div>
+          </li>
+        </ol>
+      </section>
+
+      <section class="about section" id="about" aria-labelledby="about-title">
+        <h2 id="about-title">关于</h2>
+        <p>Fandral 是一名放射技术专家与独立工程师，长期工作在医学影像、AI 工程和临床流程的交叉处。</p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p class="brand">FANDRAL / PROJECTS</p>
+      <a
+        class="text-link"
+        href="https://github.com/fandral2008"
+        target="_blank"
+        rel="noreferrer"
+      >GitHub <span aria-hidden="true">↗</span></a>
+      <p>© <span data-year></span> Fandral</p>
+    </footer>
+  </body>
+</html>
