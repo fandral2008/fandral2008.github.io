@@ -2,6 +2,8 @@ const filters = [...document.querySelectorAll('[data-filter]')]
 const projects = [...document.querySelectorAll('[data-category]')]
 const projectCount = document.querySelector('#project-count')
 
+projectCount.textContent = `${projects.length} 个项目`
+
 filters.forEach((button) => {
   button.addEventListener('click', () => {
     const selected = button.dataset.filter
