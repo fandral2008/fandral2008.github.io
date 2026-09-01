@@ -5,253 +5,328 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Fandral 的个人项目展厅：医学影像、AI 工程与独立产品。"
+      content="Fandral 的专业履历与项目作品集，聚焦医学影像、临床科研、发明专利与独立工程。"
     />
-    <meta name="theme-color" content="#ffffff" />
-    <meta property="og:title" content="Fandral / Projects" />
+    <meta name="theme-color" content="#f6f6f2" />
+    <meta property="og:title" content="FANDRAL" />
     <meta
       property="og:description"
-      content="把临床问题，做成可以验证的工具。"
+      content="放射技术专家、医学影像研究者与独立工程师。"
     />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://fandral2008.github.io/" />
-    <title>Fandral / Projects</title>
+    <meta property="og:image" content="https://fandral2008.github.io/assets/og-fandral.png" />
+    <meta property="og:image:alt" content="FANDRAL 专业履历，医学影像、科研与工程" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="https://fandral2008.github.io/assets/og-fandral.png" />
+    <title>FANDRAL | 医学影像、科研与工程</title>
     <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="./styles.css" />
-    <script src="./script.js" defer></script>
+    <script src="./script.js?v=20260901-motion1" defer></script>
   </head>
   <body>
     <a class="skip-link" href="#main">跳到主要内容</a>
 
     <header class="site-header" data-header>
-      <a class="brand" href="#top" aria-label="返回首页">FANDRAL / PROJECTS</a>
+      <a class="brand" href="#top" aria-label="返回首页">FANDRAL</a>
       <nav aria-label="主导航">
         <a href="#projects">项目</a>
-        <a href="#method">方法</a>
-        <a href="#about">关于</a>
+        <a href="#patents">专利</a>
+        <a href="#profile">履历</a>
       </nav>
     </header>
 
     <main id="main">
       <section class="hero" id="top" aria-labelledby="hero-title">
+        <div class="hero-field" aria-hidden="true"></div>
         <div class="hero-copy">
-          <h1 id="hero-title">
-            <span>把临床问题，</span>
-            <span>做成可以验证的工具。</span>
-          </h1>
-          <p>医学影像 × AI 工程 × 独立产品</p>
+          <p class="hero-kicker">放射技术专家 · 医学影像研究者 · 独立工程师</p>
+          <h1 id="hero-title">FANDRAL</h1>
+          <p class="hero-summary">
+            在医学影像、临床科研与软件工程的交叉处，把临床场景中的真实问题做成可验证的研究、发明与产品。
+          </p>
           <div class="hero-actions">
-            <a class="button button-primary" href="#projects">查看项目</a>
+            <a class="button button-primary" href="#projects">查看专业项目</a>
             <a
               class="text-link"
               href="https://github.com/fandral2008"
               target="_blank"
               rel="noreferrer"
-            >
-              GitHub <span aria-hidden="true">↗</span>
-            </a>
+            >GitHub <span aria-hidden="true">↗</span></a>
           </div>
         </div>
+        <p class="hero-note">BEIJING · CLINICAL IMAGING / APPLIED AI</p>
+      </section>
 
-        <div class="hero-visual" aria-hidden="true">
-          <img src="./assets/hero-contours.webp" alt="" />
-          <span class="scan-line scan-line-x"></span>
-          <span class="scan-line scan-line-y"></span>
+      <section class="facts" aria-label="履历摘要">
+        <div>
+          <strong>7</strong>
+          <span>项发明专利记录</span>
+        </div>
+        <div>
+          <strong>1</strong>
+          <span>项发明授权</span>
+        </div>
+        <div>
+          <strong>CT · MR · DR</strong>
+          <span>临床影像技术主线</span>
+        </div>
+        <div>
+          <strong>Python · TypeScript</strong>
+          <span>工程实现主栈</span>
         </div>
       </section>
 
       <section class="projects section" id="projects" aria-labelledby="projects-title">
-        <div class="section-heading">
-          <h2 id="projects-title">项目</h2>
-          <p id="project-count" aria-live="polite">7 个项目</p>
+        <div class="section-intro">
+          <p class="eyebrow">Selected Work</p>
+          <div>
+            <h2 id="projects-title">专业项目</h2>
+            <p>从临床问题、研究方法到可运行系统，按专业相关性排序。</p>
+          </div>
         </div>
 
         <div class="filters" aria-label="筛选项目">
           <button class="filter is-active" type="button" data-filter="all" aria-pressed="true">全部</button>
-          <button class="filter" type="button" data-filter="medical" aria-pressed="false">医疗影像</button>
-          <button class="filter" type="button" data-filter="engineering" aria-pressed="false">AI 工程</button>
-          <button class="filter" type="button" data-filter="learning" aria-pressed="false">学习工具</button>
+          <button class="filter" type="button" data-filter="medical" aria-pressed="false">医学影像</button>
+          <button class="filter" type="button" data-filter="clinical" aria-pressed="false">临床工程</button>
+          <button class="filter" type="button" data-filter="invention" aria-pressed="false">发明研究</button>
+          <button class="filter" type="button" data-filter="open" aria-pressed="false">公开项目</button>
+          <span id="project-count" aria-live="polite">10 个项目</span>
         </div>
 
         <div class="project-list">
-          <article class="project project-featured" data-category="learning engineering">
-            <div class="project-number" aria-hidden="true">01</div>
-            <div class="project-main">
-              <div class="project-copy">
-                <h3>理清 Clarify</h3>
-                <p>面向中文语境的信息判断与推理训练，用故事、判断和迁移练习拆开推理过程。</p>
-                <div class="project-actions">
-                  <a
-                    class="button button-outline"
-                    href="https://fandral2008.github.io/clarify-logic/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >在线体验 <span aria-hidden="true">↗</span></a>
-                  <a
-                    class="text-link"
-                    href="https://github.com/fandral2008/clarify-logic"
-                    target="_blank"
-                    rel="noreferrer"
-                  >查看源码 <span aria-hidden="true">↗</span></a>
-                </div>
-              </div>
-              <a
-                class="project-preview"
-                href="https://fandral2008.github.io/clarify-logic/"
-                target="_blank"
-                rel="noreferrer"
-                aria-label="打开理清 Clarify 在线体验"
-              >
-                <img src="./assets/clarify-preview.jpg" alt="理清 Clarify 课程界面预览" />
-              </a>
+          <article class="project project-lead" data-category="medical clinical invention">
+            <div class="project-index">01</div>
+            <div class="project-copy">
+              <p class="project-type">Clinical AI · Patent</p>
+              <h3>Radiology Guard</h3>
+              <p>在扫描前完成患者身份、检查部位与预约信息的一致性校验，把可预防的操作错误阻断在影像采集之前。</p>
+              <ul class="project-tags" aria-label="技术标签">
+                <li>多模态校验</li><li>边云协同</li><li>审计闭环</li>
+              </ul>
             </div>
-            <p class="project-status status-public">公开 · 可体验</p>
+            <p class="project-status status-patent">发明申请 · 已公布</p>
           </article>
 
-          <article class="project project-case" data-category="engineering">
-            <div class="project-number" aria-hidden="true">02</div>
-            <div class="project-main">
-              <div class="project-copy">
-                <p class="project-eyebrow">家庭强触达通信</p>
-                <h3>不让一通电话，停在没人听见的房间外。</h3>
-                <p>手机通过家庭私网，直接呼叫家中不同房间的实体电话；每个家庭独立运行，不建设中心通话平台。</p>
-                <ul class="project-facts">
-                  <li><strong>已真机验证</strong><span>普通振铃、双向语音、提示后自动接听与物理静音</span></li>
-                  <li><strong>下一轮验证</strong><span>从轻到强的渐进铃声，兼顾少打扰与不漏接</span></li>
-                </ul>
-                <p class="project-boundary">面向日常家庭联系，不替代运营商电话或公共紧急服务。</p>
-              </div>
-              <div
-                class="ring-visual"
-                role="img"
-                aria-label="渐强铃声设计：来电音量由轻到强，当前处于下一轮真机验证阶段"
-              >
-                <div class="ring-visual-heading">
-                  <span>来电提醒</span>
-                  <strong>由轻到强</strong>
-                </div>
-                <div class="ring-bars" aria-hidden="true">
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                </div>
-                <p>渐强铃声 · 设计验证中</p>
-              </div>
+          <article class="project" data-category="medical clinical invention">
+            <div class="project-index">02</div>
+            <div class="project-copy">
+              <p class="project-type">Thoracic Imaging · Patent</p>
+              <h3>Nodule-EcoNet</h3>
+              <p>以肺结节与周围组织、血管及胸膜的空间关系为整体分析对象，探索超越孤立结节特征的生态环境表征。</p>
+              <ul class="project-tags" aria-label="技术标签">
+                <li>肺结节</li><li>图神经网络</li><li>生态环境建模</li>
+              </ul>
             </div>
-            <p class="project-status status-pilot">私有 · 工程内测</p>
+            <p class="project-status status-accepted">发明申请 · 已受理</p>
           </article>
 
-          <article class="project" data-category="engineering">
-            <div class="project-number" aria-hidden="true">03</div>
-            <div class="project-main">
-              <div class="project-copy">
-                <h3>WeChat Radar</h3>
-                <p>把群聊中的链接、话题与趋势整理成可回看的信号。</p>
-                <div class="project-actions">
-                  <a
-                    class="text-link"
-                    href="https://github.com/fandral2008/wechat-radar"
-                    target="_blank"
-                    rel="noreferrer"
-                  >查看源码 <span aria-hidden="true">↗</span></a>
-                </div>
-              </div>
+          <article class="project" data-category="medical clinical invention">
+            <div class="project-index">03</div>
+            <div class="project-copy">
+              <p class="project-type">Photon-counting CT · Research</p>
+              <h3>PCCT 冠脉钙化定量</h3>
+              <p>研究薄层重建、心动相位与定量工作流对钙化积分一致性的影响，推动临床方法学、可复现分析与知识产权并行。</p>
+              <ul class="project-tags" aria-label="技术标签">
+                <li>NAEOTOM Alpha</li><li>Agatston</li><li>方法学验证</li>
+              </ul>
             </div>
-            <p class="project-status status-open">开源</p>
+            <p class="project-status status-research">研究进行中</p>
           </article>
 
-          <article class="project" data-category="medical engineering">
-            <div class="project-number" aria-hidden="true">04</div>
-            <div class="project-main">
-              <div class="project-copy">
-                <h3>Radiology Guard</h3>
-                <p>扫描前身份与部位校验，面向真实临床工作流的错误阻断。</p>
-              </div>
+          <article class="project" data-category="medical clinical invention">
+            <div class="project-index">04</div>
+            <div class="project-copy">
+              <p class="project-type">MRI Safety · Patent Portfolio</p>
+              <h3>MRI 安全系统组合</h3>
+              <p>围绕候诊区智能巡查、危险物识别与分级预警，形成从风险发现到现场处置的 MRI 安全方法与系统组合。</p>
+              <ul class="project-tags" aria-label="技术标签">
+                <li>多模态感知</li><li>分级预警</li><li>区域安全</li>
+              </ul>
             </div>
-            <p class="project-status status-private">私有案例</p>
+            <p class="project-status status-accepted">2 项发明申请 · 已受理</p>
           </article>
 
-          <article class="project" data-category="engineering">
-            <div class="project-number" aria-hidden="true">05</div>
-            <div class="project-main">
-              <div class="project-copy">
-                <h3>Local Professional Dictation</h3>
-                <p>本地优先的专业语音输入与可切换专业词库。</p>
-              </div>
+          <article class="project" data-category="medical clinical">
+            <div class="project-index">05</div>
+            <div class="project-copy">
+              <p class="project-type">Clinical Data · Local First</p>
+              <h3>本地临床数据去标识化系统</h3>
+              <p>面向 DICOM、结构化表格、文档与图像的本地科研数据治理工具链，组织可逆假名化、残余敏感信息扫描、审计报告与人工放行门。</p>
+              <ul class="project-tags" aria-label="技术标签">
+                <li>DICOM</li><li>假名化</li><li>残留扫描</li><li>审计报告</li>
+              </ul>
+              <p class="project-boundary">真实数据只在本地隔离环境验证；自动检查不能替代人工质量复核或院级合规批准。</p>
             </div>
-            <p class="project-status status-progress">开发中</p>
+            <p class="project-status status-private">私有 · 本地验证</p>
           </article>
 
-          <article class="project" data-category="medical engineering">
-            <div class="project-number" aria-hidden="true">06</div>
-            <div class="project-main">
-              <div class="project-copy">
-                <h3>Technician Copilot</h3>
-                <p>将扫描协议、设备经验与故障处理组织为可检索的技术知识。</p>
-              </div>
+          <article class="project" data-category="clinical">
+            <div class="project-index">06</div>
+            <div class="project-copy">
+              <p class="project-type">Operations Research · Mini Program</p>
+              <h3>智能排班工作室</h3>
+              <p>作为班表助理小程序中的独立专业功能，支持复杂规则建模、可排性检查、分层优化、人工锁保护与调班候选审阅。</p>
+              <ul class="project-tags" aria-label="技术标签">
+                <li>OR-Tools</li><li>约束优化</li><li>微信小程序</li>
+              </ul>
             </div>
-            <p class="project-status status-private">私有案例</p>
+            <p class="project-status status-private">独立功能 · 私有</p>
           </article>
 
-          <article class="project" data-category="engineering">
-            <div class="project-number" aria-hidden="true">07</div>
-            <div class="project-main">
-              <div class="project-copy">
-                <h3>Shift Assistant</h3>
-                <p>带权限边界的班表查阅、统计与日常协作助手。</p>
+          <article class="project" data-category="clinical">
+            <div class="project-index">07</div>
+            <div class="project-copy">
+              <p class="project-type">Family Communication · Self-hosted</p>
+              <h3>ONE-call-home</h3>
+              <p>每个家庭独立运行的强触达通信系统，通过家庭私网连接不同住所的房间电话与家人手机；白名单来电可在提示音后自动接听，并保留物理静音与默认不录音。</p>
+              <ul class="project-tags" aria-label="技术标签">
+                <li>Asterisk</li><li>SIP</li><li>家庭私网</li><li>适老交互</li>
+              </ul>
+              <p class="project-boundary">已完成两台 SIP 话机与移动数据下的普通振铃、双向语音、提示后自动接听及物理静音验证；渐强铃声与消费级整机交付仍处于下一轮验证。</p>
+            </div>
+            <p class="project-status status-private">私有 · R0 验证</p>
+          </article>
+
+          <article class="project" data-category="clinical">
+            <div class="project-index">08</div>
+            <div class="project-copy">
+              <p class="project-type">Local AI · Productivity</p>
+              <h3>Local Professional Dictation</h3>
+              <p>本地优先的专业语音输入工具，通过可切换词库支持医学影像等高密度专业表达，并保留离线工作路径。</p>
+              <ul class="project-tags" aria-label="技术标签">
+                <li>本地语音识别</li><li>专业词库</li><li>隐私优先</li>
+              </ul>
+            </div>
+            <p class="project-status status-progress">私有 · 开发中</p>
+          </article>
+
+          <article class="project" data-category="open">
+            <div class="project-index">09</div>
+            <div class="project-copy">
+              <p class="project-type">Learning Tool · Open Source</p>
+              <h3>理清 Clarify</h3>
+              <p>面向中文语境的信息判断与推理训练，用故事、判断与迁移练习把思考过程拆开、练熟、带回日常。</p>
+              <div class="project-actions">
+                <a class="button button-outline" href="https://fandral2008.github.io/clarify-logic/" target="_blank" rel="noreferrer">在线体验 <span aria-hidden="true">↗</span></a>
+                <a class="text-link" href="https://github.com/fandral2008/clarify-logic" target="_blank" rel="noreferrer">查看源码 <span aria-hidden="true">↗</span></a>
               </div>
             </div>
-            <p class="project-status status-private">私有案例</p>
+            <p class="project-status status-open">开源 · 可体验</p>
+          </article>
+
+          <article class="project project-fork" data-category="open">
+            <div class="project-index">10</div>
+            <div class="project-copy">
+              <p class="project-type">Open Source · Fork</p>
+              <h3>WeChat Radar</h3>
+              <p>用于整理群聊链接、话题与趋势的开源项目。本仓库为学习与延伸使用的 fork，原始项目归属上游作者。</p>
+              <div class="project-actions">
+                <a class="text-link" href="https://github.com/fandral2008/wechat-radar" target="_blank" rel="noreferrer">查看 fork <span aria-hidden="true">↗</span></a>
+              </div>
+            </div>
+            <p class="project-status status-fork">Fork · 列于最后</p>
           </article>
         </div>
       </section>
 
-      <section class="method section" id="method" aria-labelledby="method-title">
-        <div class="section-heading">
-          <h2 id="method-title">方法</h2>
+      <section class="patents section" id="patents" aria-labelledby="patents-title">
+        <div class="section-intro">
+          <p class="eyebrow">Intellectual Property</p>
+          <div>
+            <h2 id="patents-title">发明与专利</h2>
+            <p>公开履历仅列可核实的题名、角色与状态，不披露未公开的技术实现。</p>
+          </div>
         </div>
 
-        <ol class="principles">
-          <li>
-            <span class="principle-number" aria-hidden="true">01</span>
-            <div>
-              <h3>从真实问题出发</h3>
-              <p>先看数据、流程与约束，再决定工具。</p>
-            </div>
-          </li>
-          <li>
-            <span class="principle-number" aria-hidden="true">02</span>
-            <div>
-              <h3>做成可验证的交付</h3>
-              <p>能运行、能检查、能被下一位接手。</p>
-            </div>
-          </li>
-          <li>
-            <span class="principle-number" aria-hidden="true">03</span>
-            <div>
-              <h3>公开与边界同样重要</h3>
-              <p>开源可复用部分；临床数据与私有系统保持隔离。</p>
-            </div>
-          </li>
-        </ol>
+        <div class="patent-list">
+          <article class="patent-row patent-highlight">
+            <div><span>01</span><strong>发明授权</strong></div>
+            <h3>一种 AI 多模态非接触式伤情评估系统及装置</h3>
+            <p>第一发明人</p>
+            <p>CN202511122865.X</p>
+          </article>
+          <article class="patent-row">
+            <div><span>02</span><strong>已受理</strong></div>
+            <h3>一种基于图神经网络的肺结节生态环境分析系统及装置</h3>
+            <p>第一发明人</p>
+            <p>CN202511169454.6</p>
+          </article>
+          <article class="patent-row">
+            <div><span>03</span><strong>已受理</strong></div>
+            <h3>一种多模态磁共振候诊区安全智能巡查检测系统</h3>
+            <p>第一发明人</p>
+            <p>CN202511030704.8</p>
+          </article>
+          <article class="patent-row">
+            <div><span>04</span><strong>已受理</strong></div>
+            <h3>一种用于 MRI 场景安全管理的分级预警方法及系统</h3>
+            <p>第一发明人</p>
+            <p>CN202510852193.1</p>
+          </article>
+          <article class="patent-row">
+            <div><span>05</span><strong>已公布</strong></div>
+            <h3>基于人工智能与云边协同的放射检查实时质检系统及装置</h3>
+            <p>第一发明人</p>
+            <p>CN120634370A</p>
+          </article>
+          <article class="patent-row">
+            <div><span>06</span><strong>已受理</strong></div>
+            <h3>一种带有滑轨系统的可旋转、伸缩、升降的 DR 检查床</h3>
+            <p>第一发明人</p>
+            <p>CN202510254685.0</p>
+          </article>
+          <article class="patent-row">
+            <div><span>07</span><strong>已受理</strong></div>
+            <h3>带有滑轮的快拆担架</h3>
+            <p>共同发明人</p>
+            <p>CN202510254846.6</p>
+          </article>
+        </div>
+        <p class="patent-disclaimer">申请人、权利人及最新法律状态以国家知识产权局与正式法律文件为准。</p>
       </section>
 
-      <section class="about section" id="about" aria-labelledby="about-title">
-        <h2 id="about-title">关于</h2>
-        <p>Fandral 是一名放射技术专家与独立工程师，长期工作在医学影像、AI 工程和临床流程的交叉处。</p>
+      <section class="profile section" id="profile" aria-labelledby="profile-title">
+        <div class="section-intro">
+          <p class="eyebrow">Profile</p>
+          <div>
+            <h2 id="profile-title">专业能力</h2>
+            <p>临床现场的颗粒度，科研设计的严谨度，工程交付的完整度。</p>
+          </div>
+        </div>
+
+        <div class="profile-grid">
+          <article>
+            <span>01</span>
+            <h3>Clinical Imaging</h3>
+            <p>光子计数 CT、能谱 CT、多品牌 MR、DR 与介入影像技术。</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>Research</h3>
+            <p>研究设计、DICOM 数据链路、方法学比较、统计质控与可复现交付。</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>Engineering</h3>
+            <p>Python、TypeScript、NestJS、React、Docker 与本地 AI 工作流。</p>
+          </article>
+          <article>
+            <span>04</span>
+            <h3>Product Delivery</h3>
+            <p>需求建模、权限审计、本地部署、回滚恢复与真实设备验收。</p>
+          </article>
+        </div>
       </section>
     </main>
 
     <footer class="site-footer">
-      <p class="brand">FANDRAL / PROJECTS</p>
-      <a
-        class="text-link"
-        href="https://github.com/fandral2008"
-        target="_blank"
-        rel="noreferrer"
-      >GitHub <span aria-hidden="true">↗</span></a>
+      <div>
+        <p class="brand">FANDRAL</p>
+        <p>医学影像 · 科研 · 工程</p>
+      </div>
+      <a class="text-link" href="https://github.com/fandral2008" target="_blank" rel="noreferrer">GitHub <span aria-hidden="true">↗</span></a>
       <p>© <span data-year></span> Fandral</p>
     </footer>
   </body>
