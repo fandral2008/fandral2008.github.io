@@ -5,6 +5,31 @@ const header = document.querySelector('[data-header]')
 const hero = document.querySelector('.hero')
 const heroField = document.querySelector('.hero-field')
 const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches
+const mobileViewport = window.matchMedia('(max-width: 760px)')
+
+if (mobileViewport.matches) {
+  if ('scrollRestoration' in window.history) {
+    window.history.scrollRestoration = 'manual'
+  }
+
+  const showMobileHome = () => {
+    const root = document.documentElement
+    const previousBehavior = root.style.scrollBehavior
+
+    root.style.scrollBehavior = 'auto'
+    if (window.location.hash) {
+      window.history.replaceState(null, '', `${window.location.pathname}${window.location.search}`)
+    }
+    window.scrollTo({ top: 0, left: 0, behavior: 'auto' })
+
+    window.requestAnimationFrame(() => {
+      root.style.scrollBehavior = previousBehavior
+    })
+  }
+
+  showMobileHome()
+  window.addEventListener('pageshow', showMobileHome)
+}
 
 projectCount.textContent = `${projects.length} 个项目`
 
