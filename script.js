@@ -28,6 +28,8 @@ if (mobileViewport.matches) {
   }
 
   showMobileHome()
+  window.addEventListener('DOMContentLoaded', showMobileHome, { once: true })
+  window.addEventListener('load', showMobileHome, { once: true })
   window.addEventListener('pageshow', showMobileHome)
 }
 
