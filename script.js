@@ -72,8 +72,12 @@ if (!reducedMotion && 'IntersectionObserver' in window) {
     ...document.querySelectorAll('.facts > div'),
     ...document.querySelectorAll('.section-intro'),
     ...document.querySelectorAll('.project'),
-    ...document.querySelectorAll('.patent-row'),
+    ...document.querySelectorAll('.patent-feature'),
+    ...document.querySelectorAll('.patent-item'),
+    ...document.querySelectorAll('.paper'),
+    ...document.querySelectorAll('.method-list li'),
     ...document.querySelectorAll('.profile-grid article'),
+    ...document.querySelectorAll('.contact'),
   ]
 
   revealTargets.forEach((element, index) => {
