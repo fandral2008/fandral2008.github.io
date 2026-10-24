@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="把医疗一线的麻烦事做成好用的工具：科室排班、科研工具定制、本地 AI 部署咨询、临床数据去标识化方案与影像技术带教产品。"
+      content="把医疗一线的麻烦事做成好用的工具：科研全流程工具、临床 AI 模型、科室管理数字化、本地 AI 落地、AI 工作流定制、软硬件方案与医疗数据治理。"
     />
     <meta name="color-scheme" content="light dark" />
     <meta name="theme-color" content="#f3f1ea" media="(prefers-color-scheme: light)" />
@@ -13,7 +13,7 @@
     <meta property="og:title" content="FANDRAL" />
     <meta
       property="og:description"
-      content="科室排班、科研工具、本地 AI 部署与临床数据去标识化。"
+      content="科研工具、临床 AI、科室管理数字化与本地 AI 落地。"
     />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://fandral2008.github.io/" />
@@ -23,8 +23,8 @@
     <meta name="twitter:image" content="https://fandral2008.github.io/assets/og-fandral.png" />
     <title>FANDRAL | 医学影像、医疗 AI 与工程</title>
     <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="./styles.css?v=20261024-r3" />
-    <script src="./script.js?v=20261024-r3" defer></script>
+    <link rel="stylesheet" href="./styles.css?v=20261024-r4" />
+    <script src="./script.js?v=20261024-r4" defer></script>
   </head>
   <body>
     <a class="skip-link" href="#main">跳到主要内容</a>
@@ -87,12 +87,12 @@
         <div class="hero-copy">
           <p class="hero-kicker">医学影像 · 临床 AI · 全栈工程</p>
           <h1 id="hero-title">FANDRAL</h1>
-          <p class="hero-lead">把医疗一线的麻烦事，变成每天好用的工具。</p>
+          <p class="hero-lead">你带着问题来，<br />我们帮你把它做成。</p>
           <p class="hero-summary">
-            给科室管理者、临床科研人员、影像技术带教老师，以及想用 AI 又怕数据出院的团队：把排班、数据收集、去标识化和技能带教这些反复耗人的事，做成能直接用起来的东西。
+            给临床科研人员、科室管理者、影像技术带教老师、想用 AI 又怕数据出院的团队，以及有想法的医护：从找题、定方案到落地维护，把反复耗人的事做成天天能用的工具。
           </p>
           <div class="hero-actions">
-            <a class="button button-primary" href="#services">看看能帮你什么</a>
+            <a class="button button-primary" href="#stuck">你卡在哪一步</a>
             <a class="button button-ghost" href="#contact">加微信聊聊</a>
           </div>
         </div>
@@ -118,24 +118,154 @@
         </div>
       </section>
 
-      <section class="services section" id="services" aria-labelledby="services-title">
-        <div class="section-intro">
-          <p class="eyebrow">Services</p>
-          <div>
-            <h2 id="services-title">能帮你解决什么</h2>
-            <p>五类常见的麻烦，每一类都有明确的交付物和起步方式，先看适不适合你。</p>
+      <section class="services section" id="services" aria-labelledby="stuck-title">
+        <div id="stuck" class="stuck">
+          <div class="section-intro">
+            <p class="eyebrow">Where You Are</p>
+            <div>
+              <h2 id="stuck-title">你卡在哪一步？</h2>
+              <p>卡在哪一步，就从哪一步接手。</p>
+            </div>
           </div>
+          <ol class="stage-grid">
+          <li class="stage">
+            <p class="stage-no">01</p>
+            <h3>想做事，没思路</h3>
+            <p class="stage-situation">“天天被琐事拖着，知道有问题，却说不清能做成什么。”</p>
+            <dl class="stage-rows">
+              <div><dt>我们做什么</dt><dd>一起找题：顺着你的日常流程聊一次，把反复耗人的环节、数据和现有资源理一遍，结合文献与已有方案做快速可行性判断。</dd></div>
+              <div class="is-out"><dt>产出</dt><dd>一页“机会清单”，每条标出价值、难度和第一步。</dd></div>
+            </dl>
+            <a class="button button-outline" href="#contact">聊一次，一起找题 <span aria-hidden="true">→</span></a>
+          </li>
+          <li class="stage">
+            <p class="stage-no">02</p>
+            <h3>有思路，没办法</h3>
+            <p class="stage-situation">“想法有了，不知道用什么技术、要哪些数据、找谁来做。”</p>
+            <dl class="stage-rows">
+              <div><dt>我们做什么</dt><dd>定方案：把想法拆成技术路线、数据需求、所需资源、风险和最小可行版本。</dd></div>
+              <div class="is-out"><dt>产出</dt><dd>一份能拿去汇报、申请经费或立项的方案书。</dd></div>
+            </dl>
+            <a class="button button-outline" href="#domains">看看各领域能做什么 <span aria-hidden="true">→</span></a>
+          </li>
+          <li class="stage">
+            <p class="stage-no">03</p>
+            <h3>有办法，落不了地</h3>
+            <p class="stage-situation">“方案写好了，没人开发、没人部署、上线后没人维护。”</p>
+            <dl class="stage-rows">
+              <div><dt>我们做什么</dt><dd>做出来：按里程碑开发、部署、试运行和带教，每一步你都能看到进度；上线后有监控、备份和更新。</dd></div>
+              <div class="is-out"><dt>产出</dt><dd>能在科室里天天用的工具。</dd></div>
+            </dl>
+            <a class="button button-outline" href="#start">看合作怎么开始 <span aria-hidden="true">→</span></a>
+          </li>
+          <li class="stage">
+            <p class="stage-no">04</p>
+            <h3>做完了，资源浪费</h3>
+            <p class="stage-situation">“设备买了没人用，数据躺在硬盘里，课题结题工具就废了。”</p>
+            <dl class="stage-rows">
+              <div><dt>我们做什么</dt><dd>盘活：盘点已有的数据、设备、算力和做过的工具，找出能复用的方向；一个项目规划成论文、专利、软著、工具和课件多种产出，可推广到兄弟科室。</dd></div>
+              <div class="is-out"><dt>产出</dt><dd>资源盘点表与复用路线。</dd></div>
+            </dl>
+            <a class="button button-outline" href="#contact">盘一盘手上的资源 <span aria-hidden="true">→</span></a>
+          </li>
+          </ol>
         </div>
 
-        <div class="service-grid">
-          <article class="service" id="svc-scheduling">
+        <div id="domains" class="domains">
+          <div class="section-intro">
+            <p class="eyebrow">Services</p>
+            <div>
+              <h2 id="domains-title">按领域看能做什么</h2>
+              <p>从科研、临床 AI、科室管理，到 AI 落地与自动化、软硬件方案，下面是一线最常见的难题，以及能交付的工具。每一块先列出最常见的几件，点开可看全部。</p>
+            </div>
+          </div>
+
+          <div class="service-grid">
+          <article class="service" id="svc-research">
             <p class="service-no">01</p>
-            <h3>科室排班服务</h3>
+            <h3>科研全流程工具</h3>
+            <p class="service-for"><span>适合谁</span>临床科研人员、研究生、课题组、科研秘书。</p>
+            <p class="pain-head">最头痛的事</p>
+            <ul class="pain-list">
+                <li><strong>找病例、筛队列靠一条条翻系统</strong><span>按纳入排除条件做筛查清单与半自动检索导出脚本，在院内授权范围内运行。</span></li>
+                <li><strong>CRF 表格满天飞、多人填、版本乱</strong><span>手机离线采集表，字段校验、进度汇总、一键导出，多中心可分发。</span></li>
+                <li><strong>DICOM 整理到崩溃：序列混杂、格式不通</strong><span>批量整理、按序列与参数归类、DICOM→NIfTI 转换，扫描参数自动抽取成表。</span></li>
+            </ul>
+            <details class="more">
+              <summary><span class="when-closed">展开全部 6 个难题</span><span class="when-open">收起</span></summary>
+              <div class="more-body">
+                <ul class="pain-list">
+                  <li><strong>读片研究难组织</strong><span>多读者读片平台：盲法、随机顺序、计时，自动算 Kappa / ICC 一致性。</span></li>
+                  <li><strong>统计和出图反复返工</strong><span>可复现的分析脚本与出版级图表，改一处全部重算。</span></li>
+                  <li><strong>影像组学与深度学习门槛高</strong><span>特征提取、分割与模型训练验证的可复现流程，结果可追溯到每一步。 <a class="text-link" href="#svc-model">完整的模型项目见下一板块 <span aria-hidden="true">↓</span></a></span></li>
+                </ul>
+                <div class="surprise"><p><strong>你可能没想到</strong></p><ul class="surprise-list"><li>大模型或多模态模型在你的任务上到底靠不靠谱，可以做成一套标准化评测（相关背书见<a class="text-link" href="#papers">论文区</a>）。</li><li>投稿前的格式、参考文献核对，软件著作权与专利交底材料的整理，也能做成工具一键检查。</li></ul></div>
+              </div>
+            </details>
+            <p class="boundary">科研设计与结论由研究者负责，我们做让流程更快、更可复现的工具。</p>
             <dl class="service-rows">
-              <div><dt>适合谁</dt><dd>排班复杂的科室，如放射、超声等。</dd></div>
-              <div><dt>你的麻烦</dt><dd>总班表难找、换班难追、每月手排一两天。</dd></div>
-              <div><dt>能交付什么</dt><dd>把科室规则写成约束模型自动出班表；全科室用班表助理小程序查班、换班、请假、打卡。</dd></div>
-              <div class="is-start"><dt>怎么起步</dt><dd>免费试排一版下月班表，和手排的对比。</dd></div>
+              <div class="is-start"><dt>怎么起步</dt><dd>先免费搭一个采集表或读片评分表试用。</dd></div>
+            </dl>
+            <div class="service-links">
+              <a class="button button-outline" href="research/">看科研全流程方案 <span aria-hidden="true">→</span></a>
+              <a class="text-link" href="#p-collect">相关案例：科研数据采集与读片评分工具 <span aria-hidden="true">↓</span></a>
+              <a class="text-link" href="#p-deid">相关案例：本地临床数据去标识化系统 <span aria-hidden="true">↓</span></a>
+            </div>
+          </article>
+
+          <article class="service" id="svc-model">
+            <p class="service-no">02</p>
+            <h3>临床 AI 模型与成果转化</h3>
+            <p class="service-for"><span>适合谁</span>有临床问题和数据、想做成模型或专利的医生与课题组。</p>
+            <p class="pain-head">最头痛的事</p>
+            <ul class="pain-list">
+                <li><strong>有数据不知道能做什么模型</strong><span>从临床问题出发定任务（分类、分割、检测、预测），判断数据量和标注够不够。</span></li>
+                <li><strong>标注工作量大</strong><span>搭标注平台与标注规范，半自动预标注减少人工。</span></li>
+                <li><strong>模型训练与调参没人做</strong><span>训练、调参、内部验证与外部验证的完整流程，指标和图表可直接用于论文。</span></li>
+            </ul>
+            <details class="more">
+              <summary><span class="when-closed">展开全部 6 个难题</span><span class="when-open">收起</span></summary>
+              <div class="more-body">
+                <ul class="pain-list">
+                  <li><strong>模型做完停在电脑里</strong><span>封装成科室内可用的本地工具，附使用说明和效果复核记录。</span></li>
+                  <li><strong>临床里的好点子没变成专利</strong><span>专利挖掘：从你的临床流程和工具里找出可保护的技术点，梳理成技术交底书。</span></li>
+                  <li><strong>软件做完没留权属</strong><span>软件著作权申请材料的整理。</span></li>
+                </ul>
+                <div class="surprise"><p><strong>你可能没想到</strong>同一个项目可以同时产出论文、专利、软著和可用工具，提前规划一次，后面少走弯路。</p></div>
+              </div>
+            </details>
+            <p class="boundary">模型用于科研与辅助，不作为诊断依据交付；专利申请文件的撰写与提交由专利代理机构完成，我们负责挖掘与交底书梳理。</p>
+            <dl class="service-rows">
+              <div class="is-start"><dt>怎么起步</dt><dd>带一个临床问题来，免费聊一次，评估能做成模型、论文还是专利。</dd></div>
+            </dl>
+            <div class="service-links">
+              <a class="text-link" href="#p-injury">相关案例：AI 多模态非接触式伤情评估系统（授权专利） <span aria-hidden="true">↓</span></a>
+              <a class="text-link" href="#p-mri">相关案例：MRI 机房安全哨兵 <span aria-hidden="true">↓</span></a>
+            </div>
+          </article>
+
+          <article class="service" id="svc-scheduling">
+            <p class="service-no">03</p>
+            <h3>科室管理数字化</h3>
+            <p class="service-for"><span>适合谁</span>科室主任、护士长/技师长、排班员、教学秘书。</p>
+            <p class="pain-head">最头痛的事</p>
+            <ul class="pain-list">
+                <li><strong>总班表难找、换班难追、每月手排</strong><span>班表助理：自动排班 + 小程序查班换班。 <a class="text-link" href="scheduling/">了解排班服务 <span aria-hidden="true">→</span></a></span></li>
+                <li><strong>实习、进修、规培轮转排不开</strong><span>按轮转规则自动生成轮转表并核对冲突。</span></li>
+                <li><strong>工作量、绩效每月统计靠人工汇总</strong><span>记录、汇总与导出一体，口径固定可追溯。</span></li>
+            </ul>
+            <details class="more">
+              <summary><span class="when-closed">展开全部 5 个难题</span><span class="when-open">收起</span></summary>
+              <div class="more-body">
+                <ul class="pain-list">
+                  <li><strong>请假、考勤、通知、报名散在群里</strong><span>同一入口完成并留痕。</span></li>
+                  <li><strong>制度、流程、交接散落在聊天记录里</strong><span>科室知识库与岗前必读，新人入科有一份随时能查的手册。</span></li>
+                </ul>
+                <div class="surprise"><p><strong>你可能没想到</strong>设备故障与扫描协议的经验可以沉淀成可检索的知识库，换人不丢经验。</p></div>
+              </div>
+            </details>
+            <dl class="service-rows">
+              <div class="is-start"><dt>怎么起步</dt><dd>免费试排一版下月班表。</dd></div>
             </dl>
             <div class="service-links">
               <a class="button button-outline" href="scheduling/">了解排班服务 <span aria-hidden="true">→</span></a>
@@ -143,28 +273,29 @@
             </div>
           </article>
 
-          <article class="service" id="svc-research">
-            <p class="service-no">02</p>
-            <h3>科研工具定制</h3>
-            <dl class="service-rows">
-              <div><dt>适合谁</dt><dd>临床科研人员与课题组。</dd></div>
-              <div><dt>你的麻烦</dt><dd>数据收集退回 Excel、抱着电脑找人填表、读片评分难汇总。</dd></div>
-              <div><dt>能交付什么</dt><dd>一段配置生成手机可用的离线采集、读片评分或问卷网页，一键导出表格。</dd></div>
-              <div class="is-start"><dt>怎么起步</dt><dd>先免费搭一个采集表试用。</dd></div>
-            </dl>
-            <div class="service-links">
-              <a class="text-link" href="#p-collect">相关案例：科研数据采集与读片评分工具 <span aria-hidden="true">↓</span></a>
-            </div>
-          </article>
-
           <article class="service" id="svc-ai">
-            <p class="service-no">03</p>
-            <h3>本地 AI 部署咨询</h3>
+            <p class="service-no">04</p>
+            <h3>本地 AI 落地</h3>
+            <p class="service-for"><span>适合谁</span>想用 AI 又担心数据出科室的团队、信息科。</p>
+            <p class="pain-head">最头痛的事</p>
+            <ul class="pain-list">
+                <li><strong>云端大模型不敢用</strong><span>在本机或科室内网部署开源模型，数据不出本地。</span></li>
+                <li><strong>语音录入、文书整理费时</strong><span>本地语音转写 + 专业词库，按模板整理成文。</span></li>
+                <li><strong>制度、协议、手册查起来慢</strong><span>本地知识库问答，回答附出处。</span></li>
+            </ul>
+            <details class="more">
+              <summary><span class="when-closed">展开全部 6 个难题</span><span class="when-open">收起</span></summary>
+              <div class="more-body">
+                <ul class="pain-list">
+                  <li><strong>纸质单据、截图里的信息要手抄</strong><span>本地 OCR 与结构化抽取。</span></li>
+                  <li><strong>安全巡查靠人盯</strong><span>摄像头 + 本地视觉模型的分级提醒。</span></li>
+                  <li><strong>不知道买什么硬件、选哪个模型</strong><span>按场景做选型、算硬件预算、上线前做效果评测。</span></li>
+                </ul>
+                <div class="surprise"><p><strong>你可能没想到</strong>上线后还要权限、日志与评测复核，我们把“能用”做到“敢用”。</p></div>
+              </div>
+            </details>
             <dl class="service-rows">
-              <div><dt>适合谁</dt><dd>想用 AI 又担心数据出科室的团队。</dd></div>
-              <div><dt>你的麻烦</dt><dd>云端模型不敢用，本地部署又不知从何下手。</dd></div>
-              <div><dt>能交付什么</dt><dd>按场景选型，在本机或科室内网部署视觉、语音等模型，数据不出本地。</dd></div>
-              <div class="is-start"><dt>怎么起步</dt><dd>一次免费沟通，评估你的场景是否适合本地化。</dd></div>
+              <div class="is-start"><dt>怎么起步</dt><dd>一次免费沟通，评估场景是否适合本地化。</dd></div>
             </dl>
             <div class="service-links">
               <a class="text-link" href="#p-mri">相关案例：MRI 机房安全哨兵 <span aria-hidden="true">↓</span></a>
@@ -172,14 +303,87 @@
             </div>
           </article>
 
-          <article class="service" id="svc-deid">
-            <p class="service-no">04</p>
-            <h3>临床数据去标识化方案</h3>
+          <article class="service" id="svc-workflow">
+            <p class="service-no">05</p>
+            <h3>AI 工作流与智能体定制</h3>
+            <p class="service-for"><span>适合谁</span>想把重复的脑力活交给 AI 的科室、课题组、管理者和个人。</p>
+            <p class="pain-head">最头痛的事</p>
+            <ul class="pain-list">
+                <li><strong>每天重复整理、汇总、转发</strong><span>把固定流程做成自动工作流：定时抓取、整理成报告、推送到微信或邮箱。</span></li>
+                <li><strong>文献、政策、行业动态追不过来</strong><span>定时情报简报，按你的关注点筛选、摘要、附原文链接。</span></li>
+                <li><strong>一堆文档要逐份看</strong><span>批量文档处理流水线：抽取要点、比对差异、生成表格。</span></li>
+            </ul>
+            <details class="more">
+              <summary><span class="when-closed">展开全部 6 个难题</span><span class="when-open">收起</span></summary>
+              <div class="more-body">
+                <ul class="pain-list">
+                  <li><strong>一个人干不完一个团队的活</strong><span>多智能体分工协作（规划、执行、复核），关键节点留给人确认。</span></li>
+                  <li><strong>各系统之间来回复制粘贴</strong><span>用 AI 把常用工具和数据源连起来（接口、插件、自动化脚本）。</span></li>
+                  <li><strong>想让团队用好 AI 编程与写作助手</strong><span>按团队习惯配置提示词、规则、安全护栏和使用规范，并做一次带教。</span></li>
+                </ul>
+                <div class="surprise"><p><strong>你可能没想到</strong>AI 输出也需要评测和复核，我们把检查点、日志和回退方案一起做进工作流，出错能发现、能撤回。</p></div>
+              </div>
+            </details>
+            <p class="boundary">涉及患者数据的流程默认本地运行或先去标识化；需要对外发送或写入正式系统的动作保留人工确认。</p>
             <dl class="service-rows">
-              <div><dt>适合谁</dt><dd>要把影像与临床数据用于科研或外部合作的团队。</dd></div>
-              <div><dt>你的麻烦</dt><dd>DICOM 与临床文本里的身份信息难以清干净，也难以审计。</dd></div>
-              <div><dt>能交付什么</dt><dd>本地离线的去标识化与残留扫描流程，并输出审计报告。</dd></div>
-              <div class="is-start"><dt>怎么起步</dt><dd>一次免费沟通，按你的数据类型评估方案。</dd></div>
+              <div class="is-start"><dt>怎么起步</dt><dd>说一件你每周都在重复做的事，免费评估能自动化到什么程度。</dd></div>
+            </dl>
+            <div class="service-links">
+              <a class="text-link" href="#p-opc">相关案例：OPC Agent Team 一人公司 AI 角色团（开源） <span aria-hidden="true">↓</span></a>
+            </div>
+          </article>
+
+          <article class="service" id="svc-hardware">
+            <p class="service-no">06</p>
+            <h3>软硬件一体化方案</h3>
+            <p class="service-for"><span>适合谁</span>需要“装一个盒子就能用”的科室、医疗器具改良者、家庭与养老场景。</p>
+            <p class="pain-head">最头痛的事</p>
+            <ul class="pain-list">
+                <li><strong>纯软件解决不了现场问题</strong><span>边缘计算盒子 + 摄像头/传感器 + 本地模型，接上就运行，数据不出现场。</span></li>
+                <li><strong>现场提醒没人注意</strong><span>声光、语音播报、实体按键等提醒装置，与软件告警分级联动。</span></li>
+                <li><strong>通信要可靠触达</strong><span>基于 SIP 话机与家庭/科室私网的强提醒通信方案。</span></li>
+            </ul>
+            <details class="more">
+              <summary><span class="when-closed">展开全部 5 个难题</span><span class="when-open">收起</span></summary>
+              <div class="more-body">
+                <ul class="pain-list">
+                  <li><strong>本地 AI 不知道配什么机器</strong><span>按场景配硬件：算力、存储、备份与断电恢复一起规划。</span></li>
+                  <li><strong>器具用着不顺手</strong><span>从临床使用痛点出发做结构改良与原型，同步做专利挖掘（相关背书见<a class="text-link" href="#patents">专利区</a>“影像检查与转运设备”）。</span></li>
+                </ul>
+                <div class="surprise"><p><strong>你可能没想到</strong>硬件方案最怕没人维护，我们把远程状态检查、日志与故障提示一起交付。</p></div>
+              </div>
+            </details>
+            <p class="boundary">交付科研、管理与辅助用途的方案，不作为医疗器械注册产品交付。</p>
+            <dl class="service-rows">
+              <div class="is-start"><dt>怎么起步</dt><dd>描述一个现场场景，免费评估软硬件组合与预算范围。</dd></div>
+            </dl>
+            <div class="service-links">
+              <a class="text-link" href="#p-mri">相关案例：MRI 机房安全哨兵 <span aria-hidden="true">↓</span></a>
+              <a class="text-link" href="#p-onecall">相关案例：ONE-call-home 适老应急通信 <span aria-hidden="true">↓</span></a>
+            </div>
+          </article>
+
+          <article class="service" id="svc-deid">
+            <p class="service-no">07</p>
+            <h3>医疗数据治理与合规</h3>
+            <p class="service-for"><span>适合谁</span>要把影像与临床数据用于科研、外部合作或建数据集的团队。</p>
+            <p class="pain-head">最头痛的事</p>
+            <ul class="pain-list">
+                <li><strong>DICOM 与文本里的身份信息清不干净</strong><span>本地离线去标识化 + 残留扫描 + 审计报告。</span></li>
+                <li><strong>多中心数据格式各不相同</strong><span>统一数据字典与转换脚本，自动质控缺失和异常值。</span></li>
+                <li><strong>数据外发前心里没底</strong><span>外发前检查清单与放行记录，可回查。</span></li>
+            </ul>
+            <details class="more">
+              <summary><span class="when-closed">展开全部 4 个难题</span><span class="when-open">收起</span></summary>
+              <div class="more-body">
+                <ul class="pain-list">
+                  <li><strong>想建可复用的研究数据集</strong><span>从脱敏、整理、标注到版本管理的一整套流程。</span></li>
+                </ul>
+                <div class="surprise"><p><strong>你可能没想到</strong>数据整理一次做规范，后续每个课题都能复用，不用每次从头清洗。</p></div>
+              </div>
+            </details>
+            <dl class="service-rows">
+              <div class="is-start"><dt>怎么起步</dt><dd>一次免费沟通，按数据类型评估方案。</dd></div>
             </dl>
             <div class="service-links">
               <a class="text-link" href="#p-deid">相关案例：本地临床数据去标识化系统 <span aria-hidden="true">↓</span></a>
@@ -187,18 +391,63 @@
           </article>
 
           <article class="service" id="svc-teaching">
-            <p class="service-no">05</p>
-            <h3>影像技术带教产品</h3>
+            <p class="service-no">08</p>
+            <h3>影像技术培训与质控</h3>
+            <p class="service-for"><span>适合谁</span>带教老师、技师长、质控负责人、继续教育讲者。</p>
+            <p class="pain-head">最头痛的事</p>
+            <ul class="pain-list">
+                <li><strong>体位规范靠口传</strong><span>浏览器 3D 投照模拟，可反复练习。</span></li>
+                <li><strong>判片题、考核卷每年重出</strong><span>题库与在线练习，自动记录成绩与薄弱点。</span></li>
+                <li><strong>扫描协议各人各样</strong><span>协议标准化清单与对照，新人照着做。</span></li>
+            </ul>
+            <details class="more">
+              <summary><span class="when-closed">展开全部 5 个难题</span><span class="when-open">收起</span></summary>
+              <div class="more-body">
+                <ul class="pain-list">
+                  <li><strong>讲课课件做起来慢</strong><span>可交互的网页课件，手机就能看。</span></li>
+                  <li><strong>质控差错靠事后抽查</strong><span>检查前核对与质控记录工具。</span></li>
+                </ul>
+                <div class="surprise"><p><strong>你可能没想到</strong>带教材料做成产品后，可以给兄弟科室和学组共用。</p></div>
+              </div>
+            </details>
             <dl class="service-rows">
-              <div><dt>适合谁</dt><dd>放射科带教老师与技师培训。</dd></div>
-              <div><dt>你的麻烦</dt><dd>体位规范靠口传，学员缺少可反复练习的对照。</dd></div>
-              <div><dt>能交付什么</dt><dd>浏览器 3D 投照模拟与判片练习，带教与讲课共用。</dd></div>
               <div class="is-start"><dt>怎么起步</dt><dd>预约一次在线演示。</dd></div>
             </dl>
             <div class="service-links">
               <a class="text-link" href="#p-xray">相关案例：X 线摄影图像标准与投照带教 <span aria-hidden="true">↓</span></a>
+              <a class="text-link" href="#p-rg">相关案例：Radiology Guard <span aria-hidden="true">↓</span></a>
+              <a class="text-link" href="#p-mri">相关案例：MRI 机房安全哨兵 <span aria-hidden="true">↓</span></a>
             </div>
           </article>
+
+          <article class="service" id="svc-product">
+            <p class="service-no">09</p>
+            <h3>医疗场景的小程序与 Web 产品</h3>
+            <p class="service-for"><span>适合谁</span>有想法的医护人员、科室、医疗创业团队。</p>
+            <p class="pain-head">最头痛的事</p>
+            <ul class="pain-list">
+                <li><strong>有想法没人做</strong><span>从需求梳理、原型、开发到上线一条龙。</span></li>
+                <li><strong>做出来没人维护</strong><span>上线后的监控、备份、回滚与版本更新。</span></li>
+                <li><strong>不懂平台规则</strong><span>微信小程序类目、隐私指引、审核要点提前规避。</span></li>
+            </ul>
+            <details class="more">
+              <summary><span class="when-closed">展开全部 4 个难题</span><span class="when-open">收起</span></summary>
+              <div class="more-body">
+                <ul class="pain-list">
+                  <li><strong>担心数据安全</strong><span>权限、多团队隔离、审计日志从第一版就做进去。</span></li>
+                </ul>
+                <div class="surprise"><p><strong>你可能没想到</strong>先做一个只解决一件事的小工具，验证有人用了再扩展，花钱最少。</p></div>
+              </div>
+            </details>
+            <dl class="service-rows">
+              <div class="is-start"><dt>怎么起步</dt><dd>30 分钟聊需求，给你一版可行性和最小方案。</dd></div>
+            </dl>
+            <div class="service-links">
+              <a class="text-link" href="#p-shift">相关案例：班表助理 <span aria-hidden="true">↓</span></a>
+              <a class="text-link" href="#p-clarify">相关案例：理清 Clarify <span aria-hidden="true">↓</span></a>
+            </div>
+          </article>
+          </div>
         </div>
       </section>
 
@@ -206,15 +455,21 @@
         <div class="section-intro">
           <p class="eyebrow">How It Starts</p>
           <div>
-            <h2 id="start-title">合作怎么开始</h2>
-            <p>涉及临床数据的工作默认本地离线，不经手患者身份信息。</p>
+            <h2 id="start-title">合作方式</h2>
+            <p>四种深度，从聊一次开始，每一步都可以停。科学判断与结论归研究者；涉及临床数据的工作默认本地离线，不经手患者身份信息。</p>
           </div>
         </div>
-        <ol class="method-list steps">
-          <li><span class="num">01</span><h3>说一下你的场景</h3><p>加微信或发邮件，告诉我你的科室或课题遇到了什么麻烦。</p></li>
-          <li><span class="num">02</span><h3>免费评估或试做一版</h3><p>先判断适不适合，再做一版能看得见的东西，和你现在的做法对比。</p></li>
-          <li><span class="num">03</span><h3>觉得有用，再谈正式合作</h3><p>试做的结果说了算，没有用就不往下走。</p></li>
+        <ol class="method-list modes">
+          <li><span class="num">01</span><h3>聊一次</h3><p>30 分钟，判断值不值得做、先做哪一步。免费。</p></li>
+          <li><span class="num">02</span><h3>出方案</h3><p>方案书或机会清单。交付后你可以自己做，也可以找任何人做。</p></li>
+          <li><span class="num">03</span><h3>一起做</h3><p>按里程碑开发落地，源码、数据和成果归属提前约定。</p></li>
+          <li><span class="num">04</span><h3>长期陪跑</h3><p>持续迭代、维护与新需求，按月同步进展。</p></li>
         </ol>
+        <ul class="promises" aria-label="三条承诺">
+          <li>数据默认不出院、先去标识化。</li>
+          <li>需要时签保密协议。</li>
+          <li>每个阶段都有可检查的交付物，不满意可以停。</li>
+        </ul>
       </section>
 
       <section class="projects section" id="projects" aria-labelledby="projects-title">
@@ -266,7 +521,7 @@
                 <li>80+ 临床团队在网</li><li>班表入口</li><li>运筹自动排班</li><li>审批与考勤</li><li>工作量与绩效</li><li>小程序 + 网页后台</li>
               </ul>
               <div class="project-actions"><a class="button button-outline" href="scheduling/">了解排班服务 <span aria-hidden="true">→</span></a></div>
-              <p class="related">相关服务：<a class="text-link" href="#svc-scheduling">科室排班服务 <span aria-hidden="true">↑</span></a></p>
+              <p class="related">相关服务：<a class="text-link" href="#svc-scheduling">科室管理数字化 <span aria-hidden="true">↑</span></a></p>
             </div>
             <svg class="case-art" viewBox="0 0 240 160" aria-hidden="true" focusable="false">
               <g class="art-grid">
@@ -281,7 +536,7 @@
             <p class="project-status status-live">生产运行 · 80+ 临床团队</p>
           </article>
 
-          <article class="project case" data-category="medical clinical invention">
+          <article id="p-injury" class="project case" data-category="medical clinical invention">
             <div class="case-head">
               <span class="project-index">02</span>
               <p class="project-type">Multimodal AI · Granted Patent</p>
@@ -322,7 +577,7 @@
               <ul class="project-tags" aria-label="技术标签">
                 <li>DICOM 脱敏</li><li>伪名化</li><li>PIPL / HIPAA</li><li>合规审计报告</li>
               </ul>
-              <p class="related">相关服务：<a class="text-link" href="#svc-deid">临床数据去标识化方案 <span aria-hidden="true">↑</span></a></p>
+              <p class="related">相关服务：<a class="text-link" href="#svc-deid">医疗数据治理与合规 <span aria-hidden="true">↑</span></a></p>
               <p class="project-boundary">真实数据只在本地隔离环境验证；自动检查不能替代人工质量复核或院级合规批准。</p>
             </div>
             <svg class="case-art" viewBox="0 0 240 160" aria-hidden="true" focusable="false">
@@ -335,7 +590,7 @@
             <p class="project-status status-private">私有 · 本地验证</p>
           </article>
 
-          <article class="project case" data-category="medical clinical invention">
+          <article id="p-rg" class="project case" data-category="medical clinical invention">
             <div class="case-head">
               <span class="project-index">04</span>
               <p class="project-type">Clinical AI · Pre-Scan Quality Control</p>
@@ -377,7 +632,7 @@
               <ul class="project-tags" aria-label="技术标签">
                 <li>本地 AI</li><li>人形跟踪</li><li>区域状态机</li><li>视觉语言模型复核</li><li>声光告警</li>
               </ul>
-              <p class="related">相关服务：<a class="text-link" href="#svc-ai">本地 AI 部署咨询 <span aria-hidden="true">↑</span></a></p>
+              <p class="related">相关服务：<a class="text-link" href="#svc-ai">本地 AI 落地 <span aria-hidden="true">↑</span></a></p>
             </div>
             <svg class="case-art" viewBox="0 0 240 160" aria-hidden="true" focusable="false">
               <g class="art-ring"><circle cx="190" cy="80" r="68"/><circle cx="190" cy="80" r="48"/></g>
@@ -405,7 +660,7 @@
               <ul class="project-tags" aria-label="技术标签">
                 <li>3D 投照模拟</li><li>DRR</li><li>判片练习</li><li>带教</li>
               </ul>
-              <p class="related">相关服务：<a class="text-link" href="#svc-teaching">影像技术带教产品 <span aria-hidden="true">↑</span></a></p>
+              <p class="related">相关服务：<a class="text-link" href="#svc-teaching">影像技术培训与质控 <span aria-hidden="true">↑</span></a></p>
             </div>
             <svg class="case-art" viewBox="0 0 240 160" aria-hidden="true" focusable="false">
               <g class="art-box"><rect x="92" y="18" width="56" height="16" rx="4"/><rect x="84" y="136" width="72" height="10" rx="4"/></g>
@@ -429,11 +684,11 @@
             <ul class="project-tags" aria-label="技术标签">
               <li>本地离线识别</li><li>医学术语词库</li><li>Whisper</li><li>隐私优先</li>
             </ul>
-            <p class="related">相关服务：<a class="text-link" href="#svc-ai">本地 AI 部署咨询 <span aria-hidden="true">↑</span></a></p>
+            <p class="related">相关服务：<a class="text-link" href="#svc-ai">本地 AI 落地 <span aria-hidden="true">↑</span></a></p>
             <p class="project-status status-private">私有 · 本地运行</p>
           </article>
 
-          <article class="project tile" data-category="clinical">
+          <article id="p-onecall" class="project tile" data-category="clinical">
             <p class="project-index">08</p>
             <p class="project-type">Family Communication · Self-hosted</p>
             <h3>ONE-call-home 适老应急通信</h3>
@@ -463,7 +718,7 @@
             <ul class="project-tags" aria-label="技术标签">
               <li>配置驱动</li><li>单文件离线</li><li>读片评分</li><li>CSV 导出</li>
             </ul>
-            <p class="related">相关服务：<a class="text-link" href="#svc-research">科研工具定制 <span aria-hidden="true">↑</span></a></p>
+            <p class="related">相关服务：<a class="text-link" href="#svc-research">科研全流程工具 <span aria-hidden="true">↑</span></a></p>
             <p class="project-status status-private">私有 · 科研使用</p>
           </article>
 
@@ -489,7 +744,7 @@
             <p class="project-status status-research">研究 · 前沿探索</p>
           </article>
 
-          <article class="project tile" data-category="open">
+          <article id="p-clarify" class="project tile" data-category="open">
             <p class="project-index">13</p>
             <p class="project-type">Learning Tool · Open Source</p>
             <h3>理清 Clarify</h3>
@@ -501,7 +756,7 @@
             <p class="project-status status-open">开源 · 可体验</p>
           </article>
 
-          <article class="project tile tile-w2" data-category="open">
+          <article id="p-opc" class="project tile tile-w2" data-category="open">
             <p class="project-index">14</p>
             <p class="project-type">AI Agents · Open Source</p>
             <h3>OPC Agent Team 一人公司 AI 角色团</h3>
@@ -655,7 +910,7 @@
         <div class="contact-copy">
           <p class="eyebrow">Contact</p>
           <h2 id="contact-title">联系与合作</h2>
-          <p>请注明科室或课题方向，方便安排沟通。</p>
+          <p>问题你只管说，怎么解决我们来想。请注明科室或课题方向，方便安排沟通。加微信时请备注：科室或课题 + 一句话需求。</p>
           <a class="button button-primary" href="mailto:1943@88.com">发邮件 · 1943@88.com</a>
         </div>
         <figure class="contact-qr">
