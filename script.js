@@ -33,7 +33,7 @@ if (mobileViewport.matches) {
   window.addEventListener('pageshow', showMobileHome)
 }
 
-projectCount.textContent = `${projects.length} 个项目`
+if (projectCount) projectCount.textContent = `${projects.length} 个项目`
 
 filters.forEach((button) => {
   button.addEventListener('click', () => {
@@ -54,12 +54,30 @@ filters.forEach((button) => {
       visibleCount += Number(isVisible)
     })
 
-    projectCount.textContent = `${visibleCount} 个项目`
+    if (projectCount) projectCount.textContent = `${visibleCount} 个项目`
   })
 })
 
+const revealHashTarget = (hash) => {
+  if (!hash || hash.length < 2) return
+  let target = null
+  try {
+    target = document.querySelector(hash)
+  } catch (error) {
+    return
+  }
+  if (target && target.hidden) {
+    const all = filters.find((filter) => filter.dataset.filter === 'all')
+    if (all) all.click()
+  }
+}
+
+document.querySelectorAll('a[href^="#p-"]').forEach((link) => {
+  link.addEventListener('click', () => revealHashTarget(link.getAttribute('href')))
+})
+
 const syncHeader = () => {
-  header.classList.toggle('is-scrolled', window.scrollY > 24)
+  if (header) header.classList.toggle('is-scrolled', window.scrollY > 24 || header.hasAttribute('data-solid'))
 }
 
 syncHeader()
@@ -76,6 +94,11 @@ if (!reducedMotion && 'IntersectionObserver' in window) {
     ...document.querySelectorAll('.patent-item'),
     ...document.querySelectorAll('.paper'),
     ...document.querySelectorAll('.method-list li'),
+    ...document.querySelectorAll('.service'),
+    ...document.querySelectorAll('.open-card'),
+    ...document.querySelectorAll('.sub-card'),
+    ...document.querySelectorAll('.faq > div'),
+    ...document.querySelectorAll('.callout'),
     ...document.querySelectorAll('.profile-grid article'),
     ...document.querySelectorAll('.contact'),
   ]
@@ -102,6 +125,8 @@ if (!reducedMotion && 'IntersectionObserver' in window) {
   let targetX = 0
   let targetY = 0
 
+  if (hero && heroField) {
+
   const paintParallax = () => {
     heroField.style.setProperty('--hero-x', `${targetX}px`)
     heroField.style.setProperty('--hero-y', `${targetY}px`)
@@ -120,6 +145,8 @@ if (!reducedMotion && 'IntersectionObserver' in window) {
     targetY = 0
     if (!frame) frame = window.requestAnimationFrame(paintParallax)
   })
+  }
 }
 
-document.querySelector('[data-year]').textContent = new Date().getFullYear()
+const yearNode = document.querySelector('[data-year]')
+if (yearNode) yearNode.textContent = new Date().getFullYear()

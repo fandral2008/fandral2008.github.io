@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Fandral 的专业履历与项目作品集，聚焦医学影像、医疗 AI、临床科研、发明专利与独立工程。"
+      content="把医疗一线的麻烦事做成好用的工具：科室排班、科研工具定制、本地 AI 部署咨询、临床数据去标识化方案与影像技术带教产品。"
     />
     <meta name="color-scheme" content="light dark" />
     <meta name="theme-color" content="#f3f1ea" media="(prefers-color-scheme: light)" />
@@ -13,7 +13,7 @@
     <meta property="og:title" content="FANDRAL" />
     <meta
       property="og:description"
-      content="医学影像技术、医疗 AI 研究与独立开发实践。"
+      content="科室排班、科研工具、本地 AI 部署与临床数据去标识化。"
     />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://fandral2008.github.io/" />
@@ -23,8 +23,8 @@
     <meta name="twitter:image" content="https://fandral2008.github.io/assets/og-fandral.png" />
     <title>FANDRAL | 医学影像、医疗 AI 与工程</title>
     <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="./styles.css?v=20261024-r2" />
-    <script src="./script.js?v=20261024-r2" defer></script>
+    <link rel="stylesheet" href="./styles.css?v=20261024-r3" />
+    <script src="./script.js?v=20261024-r3" defer></script>
   </head>
   <body>
     <a class="skip-link" href="#main">跳到主要内容</a>
@@ -32,12 +32,11 @@
     <header class="site-header" data-header>
       <a class="brand" href="#top" aria-label="返回首页">FANDRAL</a>
       <nav aria-label="主导航">
-        <a href="#projects">项目</a>
-        <a href="#method">工作方式</a>
-        <a href="#patents">专利</a>
-        <a href="#papers">论文</a>
-        <a href="#profile">能力</a>
-        <a href="#contact">合作</a>
+        <a href="#services">能帮你什么</a>
+        <a href="#projects">案例</a>
+        <a href="#open">开源</a>
+        <a href="#patents">背书</a>
+        <a href="#contact">联系</a>
       </nav>
     </header>
 
@@ -88,13 +87,13 @@
         <div class="hero-copy">
           <p class="hero-kicker">医学影像 · 临床 AI · 全栈工程</p>
           <h1 id="hero-title">FANDRAL</h1>
-          <p class="hero-lead">把临床现场的真实问题，做成可验证的研究、发明与产品。</p>
+          <p class="hero-lead">把医疗一线的麻烦事，变成每天好用的工具。</p>
           <p class="hero-summary">
-            在医学影像、临床科研与 AI 工程的交叉处工作：从影像技术一线出发，到研究设计与可运行的系统。
+            给科室管理者、临床科研人员、影像技术带教老师，以及想用 AI 又怕数据出院的团队：把排班、数据收集、去标识化和技能带教这些反复耗人的事，做成能直接用起来的东西。
           </p>
           <div class="hero-actions">
-            <a class="button button-primary" href="#projects">查看专业项目</a>
-            <a class="button button-ghost" href="https://github.com/fandral2008" target="_blank" rel="noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+            <a class="button button-primary" href="#services">看看能帮你什么</a>
+            <a class="button button-ghost" href="#contact">加微信聊聊</a>
           </div>
         </div>
         <p class="hero-note">BEIJING · CLINICAL IMAGING / APPLIED AI</p>
@@ -119,12 +118,111 @@
         </div>
       </section>
 
+      <section class="services section" id="services" aria-labelledby="services-title">
+        <div class="section-intro">
+          <p class="eyebrow">Services</p>
+          <div>
+            <h2 id="services-title">能帮你解决什么</h2>
+            <p>五类常见的麻烦，每一类都有明确的交付物和起步方式，先看适不适合你。</p>
+          </div>
+        </div>
+
+        <div class="service-grid">
+          <article class="service" id="svc-scheduling">
+            <p class="service-no">01</p>
+            <h3>科室排班服务</h3>
+            <dl class="service-rows">
+              <div><dt>适合谁</dt><dd>排班复杂的科室，如放射、超声等。</dd></div>
+              <div><dt>你的麻烦</dt><dd>总班表难找、换班难追、每月手排一两天。</dd></div>
+              <div><dt>能交付什么</dt><dd>把科室规则写成约束模型自动出班表；全科室用班表助理小程序查班、换班、请假、打卡。</dd></div>
+              <div class="is-start"><dt>怎么起步</dt><dd>免费试排一版下月班表，和手排的对比。</dd></div>
+            </dl>
+            <div class="service-links">
+              <a class="button button-outline" href="scheduling/">了解排班服务 <span aria-hidden="true">→</span></a>
+              <a class="text-link" href="#p-shift">相关案例：班表助理 <span aria-hidden="true">↓</span></a>
+            </div>
+          </article>
+
+          <article class="service" id="svc-research">
+            <p class="service-no">02</p>
+            <h3>科研工具定制</h3>
+            <dl class="service-rows">
+              <div><dt>适合谁</dt><dd>临床科研人员与课题组。</dd></div>
+              <div><dt>你的麻烦</dt><dd>数据收集退回 Excel、抱着电脑找人填表、读片评分难汇总。</dd></div>
+              <div><dt>能交付什么</dt><dd>一段配置生成手机可用的离线采集、读片评分或问卷网页，一键导出表格。</dd></div>
+              <div class="is-start"><dt>怎么起步</dt><dd>先免费搭一个采集表试用。</dd></div>
+            </dl>
+            <div class="service-links">
+              <a class="text-link" href="#p-collect">相关案例：科研数据采集与读片评分工具 <span aria-hidden="true">↓</span></a>
+            </div>
+          </article>
+
+          <article class="service" id="svc-ai">
+            <p class="service-no">03</p>
+            <h3>本地 AI 部署咨询</h3>
+            <dl class="service-rows">
+              <div><dt>适合谁</dt><dd>想用 AI 又担心数据出科室的团队。</dd></div>
+              <div><dt>你的麻烦</dt><dd>云端模型不敢用，本地部署又不知从何下手。</dd></div>
+              <div><dt>能交付什么</dt><dd>按场景选型，在本机或科室内网部署视觉、语音等模型，数据不出本地。</dd></div>
+              <div class="is-start"><dt>怎么起步</dt><dd>一次免费沟通，评估你的场景是否适合本地化。</dd></div>
+            </dl>
+            <div class="service-links">
+              <a class="text-link" href="#p-mri">相关案例：MRI 机房安全哨兵 <span aria-hidden="true">↓</span></a>
+              <a class="text-link" href="#p-dictation">相关案例：Local Professional Dictation <span aria-hidden="true">↓</span></a>
+            </div>
+          </article>
+
+          <article class="service" id="svc-deid">
+            <p class="service-no">04</p>
+            <h3>临床数据去标识化方案</h3>
+            <dl class="service-rows">
+              <div><dt>适合谁</dt><dd>要把影像与临床数据用于科研或外部合作的团队。</dd></div>
+              <div><dt>你的麻烦</dt><dd>DICOM 与临床文本里的身份信息难以清干净，也难以审计。</dd></div>
+              <div><dt>能交付什么</dt><dd>本地离线的去标识化与残留扫描流程，并输出审计报告。</dd></div>
+              <div class="is-start"><dt>怎么起步</dt><dd>一次免费沟通，按你的数据类型评估方案。</dd></div>
+            </dl>
+            <div class="service-links">
+              <a class="text-link" href="#p-deid">相关案例：本地临床数据去标识化系统 <span aria-hidden="true">↓</span></a>
+            </div>
+          </article>
+
+          <article class="service" id="svc-teaching">
+            <p class="service-no">05</p>
+            <h3>影像技术带教产品</h3>
+            <dl class="service-rows">
+              <div><dt>适合谁</dt><dd>放射科带教老师与技师培训。</dd></div>
+              <div><dt>你的麻烦</dt><dd>体位规范靠口传，学员缺少可反复练习的对照。</dd></div>
+              <div><dt>能交付什么</dt><dd>浏览器 3D 投照模拟与判片练习，带教与讲课共用。</dd></div>
+              <div class="is-start"><dt>怎么起步</dt><dd>预约一次在线演示。</dd></div>
+            </dl>
+            <div class="service-links">
+              <a class="text-link" href="#p-xray">相关案例：X 线摄影图像标准与投照带教 <span aria-hidden="true">↓</span></a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="start section" id="start" aria-labelledby="start-title">
+        <div class="section-intro">
+          <p class="eyebrow">How It Starts</p>
+          <div>
+            <h2 id="start-title">合作怎么开始</h2>
+            <p>涉及临床数据的工作默认本地离线，不经手患者身份信息。</p>
+          </div>
+        </div>
+        <ol class="method-list steps">
+          <li><span class="num">01</span><h3>说一下你的场景</h3><p>加微信或发邮件，告诉我你的科室或课题遇到了什么麻烦。</p></li>
+          <li><span class="num">02</span><h3>免费评估或试做一版</h3><p>先判断适不适合，再做一版能看得见的东西，和你现在的做法对比。</p></li>
+          <li><span class="num">03</span><h3>觉得有用，再谈正式合作</h3><p>试做的结果说了算，没有用就不往下走。</p></li>
+        </ol>
+      </section>
+
       <section class="projects section" id="projects" aria-labelledby="projects-title">
         <div class="section-intro">
           <p class="eyebrow">Selected Work</p>
           <div>
-            <h2 id="projects-title">专业项目</h2>
-            <p>从临床痛点、研究方法到工程化可运行系统，按专业相关性与落地深度排序。</p>
+            <h2 id="projects-title">做过的项目</h2>
+            <p>上面每一项服务背后的真实案例，从临床痛点到可运行的系统，按专业相关性与落地深度排序。</p>
           </div>
         </div>
 
@@ -138,7 +236,7 @@
         </div>
 
         <div class="case-list">
-          <article class="project case" data-category="medical clinical">
+          <article id="p-shift" class="project case" data-category="medical clinical">
             <div class="case-head">
               <span class="project-index">01</span>
               <p class="project-type">Clinical Operations · Smart Department Management</p>
@@ -167,6 +265,8 @@
               <ul class="project-tags" aria-label="技术标签">
                 <li>80+ 临床团队在网</li><li>班表入口</li><li>运筹自动排班</li><li>审批与考勤</li><li>工作量与绩效</li><li>小程序 + 网页后台</li>
               </ul>
+              <div class="project-actions"><a class="button button-outline" href="scheduling/">了解排班服务 <span aria-hidden="true">→</span></a></div>
+              <p class="related">相关服务：<a class="text-link" href="#svc-scheduling">科室排班服务 <span aria-hidden="true">↑</span></a></p>
             </div>
             <svg class="case-art" viewBox="0 0 240 160" aria-hidden="true" focusable="false">
               <g class="art-grid">
@@ -207,7 +307,7 @@
             <p class="project-status status-patent">授权 · 第一发明人</p>
           </article>
 
-          <article class="project case" data-category="medical clinical">
+          <article id="p-deid" class="project case" data-category="medical clinical">
             <div class="case-head">
               <span class="project-index">03</span>
               <p class="project-type">Clinical Data · Privacy First</p>
@@ -222,6 +322,7 @@
               <ul class="project-tags" aria-label="技术标签">
                 <li>DICOM 脱敏</li><li>伪名化</li><li>PIPL / HIPAA</li><li>合规审计报告</li>
               </ul>
+              <p class="related">相关服务：<a class="text-link" href="#svc-deid">临床数据去标识化方案 <span aria-hidden="true">↑</span></a></p>
               <p class="project-boundary">真实数据只在本地隔离环境验证；自动检查不能替代人工质量复核或院级合规批准。</p>
             </div>
             <svg class="case-art" viewBox="0 0 240 160" aria-hidden="true" focusable="false">
@@ -261,7 +362,7 @@
             <p class="project-status status-research">研究 · Demo 就绪</p>
           </article>
 
-          <article class="project case" data-category="medical clinical">
+          <article id="p-mri" class="project case" data-category="medical clinical">
             <div class="case-head">
               <span class="project-index">05</span>
               <p class="project-type">Clinical Safety · Edge AI</p>
@@ -276,6 +377,7 @@
               <ul class="project-tags" aria-label="技术标签">
                 <li>本地 AI</li><li>人形跟踪</li><li>区域状态机</li><li>视觉语言模型复核</li><li>声光告警</li>
               </ul>
+              <p class="related">相关服务：<a class="text-link" href="#svc-ai">本地 AI 部署咨询 <span aria-hidden="true">↑</span></a></p>
             </div>
             <svg class="case-art" viewBox="0 0 240 160" aria-hidden="true" focusable="false">
               <g class="art-ring"><circle cx="190" cy="80" r="68"/><circle cx="190" cy="80" r="48"/></g>
@@ -288,7 +390,7 @@
             <p class="project-status status-private">私有 · 原型验证</p>
           </article>
 
-          <article class="project case" data-category="medical clinical">
+          <article id="p-xray" class="project case" data-category="medical clinical">
             <div class="case-head">
               <span class="project-index">06</span>
               <p class="project-type">Radiography Education · 3D Simulator</p>
@@ -303,6 +405,7 @@
               <ul class="project-tags" aria-label="技术标签">
                 <li>3D 投照模拟</li><li>DRR</li><li>判片练习</li><li>带教</li>
               </ul>
+              <p class="related">相关服务：<a class="text-link" href="#svc-teaching">影像技术带教产品 <span aria-hidden="true">↑</span></a></p>
             </div>
             <svg class="case-art" viewBox="0 0 240 160" aria-hidden="true" focusable="false">
               <g class="art-box"><rect x="92" y="18" width="56" height="16" rx="4"/><rect x="84" y="136" width="72" height="10" rx="4"/></g>
@@ -318,7 +421,7 @@
         </div>
 
         <div class="bento">
-          <article class="project tile tile-wide" data-category="clinical">
+          <article id="p-dictation" class="project tile tile-wide" data-category="clinical">
             <p class="project-index">07</p>
             <p class="project-type">Local AI · Productivity</p>
             <h3>Local Professional Dictation</h3>
@@ -326,6 +429,7 @@
             <ul class="project-tags" aria-label="技术标签">
               <li>本地离线识别</li><li>医学术语词库</li><li>Whisper</li><li>隐私优先</li>
             </ul>
+            <p class="related">相关服务：<a class="text-link" href="#svc-ai">本地 AI 部署咨询 <span aria-hidden="true">↑</span></a></p>
             <p class="project-status status-private">私有 · 本地运行</p>
           </article>
 
@@ -351,7 +455,7 @@
             <p class="project-status status-open">工程实践 · v0.4.0 就绪</p>
           </article>
 
-          <article class="project tile tile-wide" data-category="clinical">
+          <article id="p-collect" class="project tile tile-wide" data-category="clinical">
             <p class="project-index">10</p>
             <p class="project-type">Research Tooling · Offline Forms</p>
             <h3>科研数据采集与读片评分工具</h3>
@@ -359,6 +463,7 @@
             <ul class="project-tags" aria-label="技术标签">
               <li>配置驱动</li><li>单文件离线</li><li>读片评分</li><li>CSV 导出</li>
             </ul>
+            <p class="related">相关服务：<a class="text-link" href="#svc-research">科研工具定制 <span aria-hidden="true">↑</span></a></p>
             <p class="project-status status-private">私有 · 科研使用</p>
           </article>
 
@@ -412,23 +517,40 @@
         </div>
       </section>
 
-      <section class="method section" id="method" aria-labelledby="method-title">
+      <section class="open section" id="open" aria-labelledby="open-title">
         <div class="section-intro">
-          <p class="eyebrow">How I Work</p>
+          <p class="eyebrow">Free &amp; Open Source</p>
           <div>
-            <h2 id="method-title">工作方式</h2>
-            <p>需求来自临床现场，交付以可验证为准。</p>
+            <h2 id="open-title">免费与开源</h2>
+            <p>先把能直接用的东西放出来，用上了觉得有价值，再聊合作。</p>
           </div>
         </div>
-        <ol class="method-list">
-          <li><span class="num">01</span><h3>临床现场驱动需求</h3><p>从影像技术一线的真实流程出发，先界定问题，再决定用什么技术。</p></li>
-          <li><span class="num">02</span><h3>本地优先与隐私</h3><p>涉及临床数据的工具默认本地离线运行，数据不出本机。</p></li>
-          <li><span class="num">03</span><h3>可验证的交付</h3><p>每次交付带测试与回滚路径，能复现、能恢复，再谈上线。</p></li>
-          <li>
-            <span class="num">04</span><h3>AI 代理协作开发</h3>
-            <p>用 Claude Code 与 Codex 分工推进工程，角色与流程已整理为<a class="text-link" href="https://github.com/fandral2008/opc-agent-team" target="_blank" rel="noreferrer">公开仓库 <span aria-hidden="true">↗</span></a></p>
-          </li>
-        </ol>
+        <div class="open-grid">
+          <article class="open-card">
+            <p class="project-type">Mini Program · Free</p>
+            <h3>班表助理小程序</h3>
+            <p>全科室每个人都可以在微信小程序里查班、换班、请假、打卡，全科室免费使用。</p>
+            <div class="project-actions"><a class="text-link" href="scheduling/">了解排班服务 <span aria-hidden="true">→</span></a></div>
+            <p class="project-status status-live">全科室免费使用</p>
+          </article>
+          <article class="open-card">
+            <p class="project-type">Learning Tool · Online</p>
+            <h3>理清 Clarify</h3>
+            <p>面向中文语境的信息判断与推理训练，打开网页即可使用。</p>
+            <div class="project-actions">
+              <a class="button button-outline" href="https://fandral2008.github.io/clarify-logic/" target="_blank" rel="noreferrer">在线体验 <span aria-hidden="true">↗</span></a>
+              <a class="text-link" href="https://github.com/fandral2008/clarify-logic" target="_blank" rel="noreferrer">查看源码 <span aria-hidden="true">↗</span></a>
+            </div>
+            <p class="project-status status-open">开源 · 在线可用</p>
+          </article>
+          <article class="open-card">
+            <p class="project-type">AI Agents · Open Source</p>
+            <h3>OPC Agent Team</h3>
+            <p>把一人公司需要的各类岗位写成 33 张 AI 代理角色卡，配合场景编排脚本，在 Claude Code 或 Codex 中按需运行。</p>
+            <div class="project-actions"><a class="text-link" href="https://github.com/fandral2008/opc-agent-team" target="_blank" rel="noreferrer">查看源码 <span aria-hidden="true">↗</span></a></div>
+            <p class="project-status status-open">开源 · v0.2.0</p>
+          </article>
+        </div>
       </section>
 
       <section class="patents section" id="patents" aria-labelledby="patents-title">
@@ -530,10 +652,16 @@
       </section>
 
       <section class="contact" id="contact" aria-labelledby="contact-title">
-        <p class="eyebrow">Contact</p>
-        <h2 id="contact-title">联系与合作</h2>
-        <p>欢迎围绕医学影像 AI、临床工程与工具开发交流合作。</p>
-        <a class="button button-primary" href="https://github.com/fandral2008" target="_blank" rel="noreferrer">在 GitHub 找到我 <span aria-hidden="true">↗</span></a>
+        <div class="contact-copy">
+          <p class="eyebrow">Contact</p>
+          <h2 id="contact-title">联系与合作</h2>
+          <p>请注明科室或课题方向，方便安排沟通。</p>
+          <a class="button button-primary" href="mailto:1943@88.com">发邮件 · 1943@88.com</a>
+        </div>
+        <figure class="contact-qr">
+          <div class="qr-frame"><img src="assets/wechat-qr.jpg" alt="微信二维码" width="820" height="1229" loading="lazy" /></div>
+          <figcaption><span class="qr-desktop">微信扫码添加</span><span class="qr-mobile">长按识别二维码</span></figcaption>
+        </figure>
       </section>
     </main>
 
