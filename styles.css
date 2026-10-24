@@ -571,6 +571,13 @@ h2 {
   letter-spacing: -0.015em;
 }
 
+.case-lead {
+  margin-top: var(--s1);
+  color: var(--accent);
+  font-size: clamp(16px, 1.4vw, 19px);
+  font-weight: 600;
+}
+
 .project-tags {
   display: flex;
   flex-wrap: wrap;
