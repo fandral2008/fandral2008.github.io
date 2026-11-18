@@ -2165,3 +2165,52 @@ h2 {
     grid-template-columns: minmax(0, 1fr);
   }
 }
+
+/* follow: official account beside the WeChat contact */
+.contact-qrs {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: var(--s3);
+  justify-content: end;
+}
+
+.contact-qrs .qr-frame {
+  width: 180px;
+  height: 180px;
+}
+
+.qr-frame.qr-plain img {
+  position: static;
+  width: 100%;
+  height: 100%;
+}
+
+.contact-qr figcaption strong {
+  display: block;
+  color: var(--ink);
+  font-weight: 600;
+}
+
+.contact-qr figcaption {
+  text-align: center;
+}
+
+.contact-follow {
+  grid-column: 1 / -1;
+  margin: 0;
+  color: var(--muted);
+  font-size: 14px;
+  text-align: center;
+}
+
+@media (max-width: 760px) {
+  .contact-qrs {
+    justify-content: start;
+    gap: var(--s2);
+  }
+
+  .contact-qrs .qr-frame {
+    width: 140px;
+    height: 140px;
+  }
+}
